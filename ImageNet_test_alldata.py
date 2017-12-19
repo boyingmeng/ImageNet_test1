@@ -166,7 +166,7 @@ keep_prob = tf.placeholder("float")
 #x_image = tf.reshape(x, [-1, 28, 28, 1])  # reshape
 net = slim.conv2d(x, 64, [11, 11], 4, padding='VALID',
                         scope='conv1')
-net = slim.max_pool2d(net, [3, 3], 2, scope='pool1')
+#net = slim.max_pool2d(net, [3, 3], 2, scope='pool1')
 net = slim.conv2d(net, 192, [5, 5], scope='conv2')
 #net = slim.max_pool2d(net, [3, 3], 2, scope='pool2')
 net = slim.conv2d(net, 384, [3, 3], scope='conv3')
