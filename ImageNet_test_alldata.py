@@ -135,7 +135,7 @@ def load_databatch(data_folder, img_size):
         mean=mean_image)
 
 
-imagenet = load_databatch('Imagenet' + str(img_size_0) + '_train/', img_size_0)
+imagenet = load_databatch('../Imagenet' + str(img_size_0) + '_train/', img_size_0)
 
 #for i in range(9):
 #    imagenet1 = load_databatch('Imagenet' + str(img_size_0) + '_train/', i+2, img_size_0)
